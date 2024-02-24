@@ -1,0 +1,42 @@
+@base=http://localhost:8080/api/v1
+
+### Get All students
+
+GET {{base}}/students
+Content-Type: application/json
+
+### Get one student
+
+GET {{base}}/students/65d86d52c91b2e762f7a0ab2
+Content-Type: application/json
+
+
+### Create student
+
+POST {{base}}/students
+Content-Type: application/json
+
+{
+  "name":"Sample",
+  "surname":"Surname",
+  "age": 22,
+  "phoneNumber":"0983235153"
+}
+
+### Delete student
+
+DELETE {{base}}/students/65d86d52c91b2e762f7a0ab2
+Content-Type: application/json
+
+### Update student
+
+PUT {{base}}/students/65d9dcb84b6b592093464d7f
+Content-Type: application/json
+
+{
+  "id": "65d9dcb84b6b592093464d7f",
+  "name": "Rostik",
+  "surname": "GG",
+  "age": 25,
+  "phoneNumber": "0954321121"
+}
